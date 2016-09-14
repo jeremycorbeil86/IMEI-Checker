@@ -1,9 +1,9 @@
 #!/usr/bin/python2.7
 
 import ast
-IMEI = raw_input("Enter your IMEI number: ")
+IMEI = input("Enter your IMEI number: ")
 while (IMEI == ""):
-	IMEI = raw_input("Enter your IMEI number: ")
+	IMEI = input("Enter your IMEI number: ")
 
 TOTAL = 0
 SUM = 0
@@ -46,13 +46,14 @@ CASE = {
     "02": "Your phone is manufactured in 'Emirates' and it's quality is 'LOW'",
 	"20": "Your phone is manufactured in 'Emirates' and it's quality is 'LOW'",
     "03": "Your phone is manufactured in 'China' and it's quality is 'GOOD'",
-	"04": "Your phone is manufactured in 'China' and it's quality is 'GOOD'",
 	"30": "Your phone is manufactured in 'China' and it's quality is 'GOOD'",
+	"04": "Your phone is manufactured in 'China' and it's quality is 'GOOD'",
 	"40": "Your phone is manufactured in 'China' and it's quality is 'GOOD'",
     "05": "Your phone is manufactured either in 'Brazil,USA or Finland' and it's quality is 'GOOD'",
 	"50": "Your phone is manufactured either in 'Brazil,USA or Finland' and it's quality is 'GOOD'",
     "06": "Your phone is manufactured either in 'Hong-Kong or Mexico' and it's quality is 'NOT BAD'",
 	"60": "Your phone is manufactured either in 'Hong-Kong or Mexico' and it's quality is 'NOT BAD'",
+	"07": "Your phone is manufactured in europe, but I don't know about the exact country name",
     "08": "Your phone is manufactured in 'Finland' and it's quality is 'FAIR'",
 	"80": "Your phone is manufactured in 'Finland' and it's quality is 'FAIR'",
     "13": "Your phone is manufactured in 'Finland' and it's quality is 'TOO BAD and DANGEROUS for health!'"
