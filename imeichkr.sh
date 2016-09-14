@@ -43,6 +43,7 @@ if [[ ${MUST} = ${CHECK} ]]; then
 	03|04|30|40)	echo "Your phone is manufactured in 'China' and it's quality is 'GOOD'";;
 	05|50)			echo "Your phone is manufactured either in 'Brazil,USA or Finland' and it's quality is 'GOOD'";;
 	06|60)			echo "Your phone is manufactured either in 'Hong-Kong or Mexico' and it's quality is 'NOT BAD'";;
+	07|70)			echo "Your phone is manufactured in europe, but I don't know about the exact country name";;
 	08|80)			echo "Your phone is manufactured in 'Finland' and it's quality is 'FAIR'";;
 	13)				echo "Your phone is manufactured in 'Finland' and it's quality is 'TOO BAD and DANGEROUS for health!'";;
 	esac
