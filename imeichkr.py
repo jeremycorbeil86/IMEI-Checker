@@ -1,22 +1,26 @@
 #!/usr/bin/python2.7
 
 import ast
+
 IMEI = input("Enter your IMEI number: ")
 while (IMEI == ""):
 	IMEI = input("Enter your IMEI number: ")
 
+Y = str(IMEI)
+print(type(Y))
+print(Y)
 TOTAL = 0
 SUM = 0
 x1 = 0
 x2 = 0
-MOD = IMEI[:-1]
+MOD = Y[:-1]
 DIGITS = len(MOD)
-ORGDIG = len(IMEI)
-CHECK = ast.literal_eval(IMEI[DIGITS])
-country = IMEI[6:8]
+ORGDIG = len(Y)
+CHECK = ast.literal_eval(Y[DIGITS])
+country = Y[6:8]
 
 for i in range(1,DIGITS,2):
-	num_1 = IMEI[i]
+	num_1 = Y[i]
 	num1 = ast.literal_eval(num_1)
 	mul1 = num1*2
 	if mul1 < 10:
@@ -31,7 +35,7 @@ for i in range(1,DIGITS,2):
 RESULT1 = x1
 
 for j  in range(0,DIGITS,2):
-	num_2 = IMEI[j]
+	num_2 = Y[j]
 	x2 += ast.literal_eval(num_2)
 
 RESULT2 = x2
