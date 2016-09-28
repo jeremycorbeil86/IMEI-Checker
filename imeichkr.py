@@ -7,8 +7,6 @@ while (IMEI == ""):
 	IMEI = input("Enter your IMEI number: ")
 
 Y = str(IMEI)
-print(type(Y))
-print(Y)
 TOTAL = 0
 SUM = 0
 x1 = 0
